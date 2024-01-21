@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <title>Legal Solution</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-garamond{
+            font-family: "EB Garamond", serif;
+        }
+        .font-poppins{
+            font-family: "Poppins", sans-serif;
+        }
+        .banner{
+            background-image: linear-gradient(0deg, #111 0%, rgba(17, 17, 17, 0.00) 100%), url('/images/banner.png');
+        }
+    </style>
+
 </head>
 <body>
-    <h1 class="bg-red-300">hello</h1>
+    <header class="max-w-[1170px] mx-auto py-12">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services 
+                        <img src="./images/arrow.svg" alt="">
+                    </a></li>
+                    <li><a href="#cases">Cases 
+                        <img src="./images/arrow.svg" alt="">
+                    </a></li>
+                    <li><a href="#blog">Blog 
+                        <img src="./images/arrow.svg" alt="">
+                    </a></li>
+                    <li><a href="#contact">Contact Us 
+                        <img src="./images/arrow.svg" alt="">
+                    </a></li>
+                </ul>
+              </div>
+              <a href="#">
+                <img src="./images/logo2.png" alt="">
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services 
+                        <img src="./images/arrow.svg" alt="">
+                    </a></li>
+                    <li><a href="#cases">Cases 
+                        <img src="./images/arrow.svg" alt="">
+                    </a></li>
+                    <li><a href="#blog">Blog 
+                        <img src="./images/arrow.svg" alt="">
+                    </a></li>
+                    <li><a href="#contact">Contact Us 
+                        <img src="./images/arrow.svg" alt="">
+                    </a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="bg-primary-color text-lg font-semibold text-white py-4 px-7 rounded-lg">Free Consultation</a>
+            </div>
+          </div>
+
+        <!-- banner start  -->
+        <section class="banner mt-12 flex justify-center text-white py-24 text-center  bg-cover bg-center">
+            <div class="max-w-2xl">
+                <h1 class="text-7xl font-extrabold font-garamond leading-[85px]">We Provide Effective Legal Solutions</h1>
+                <p class="font-poppins mt-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="flex gap-6 mt-8">
+                    <input class="flex-1 p-5 rounded-lg focus:outline-none focus:ring focus:ring-primary-color" type="text" placeholder="Search your services">
+                    <button class="bg-primary-color text-xl font-semibold  py-4 px-10 rounded-lg">Search</button>
+                </div>
+            </div>
+        </section>
+        <!-- banner end  -->
+    </header>
+    
+    <main></main>
+    <footer></footer>
 </body>
 </html>
